@@ -1,0 +1,30 @@
+<div class="container">
+    <h4 style="text-align:center;">Category</h4>
+    <br>
+    <form class="form1">
+      <label for="ID">ID:</label>
+        <input type="text" id="ID" name="ID" ng-model="form_category.id"><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ng-model="form_category.name"><br><br>
+        <button type="button" class="btn btn-primary" ng-click="addCategory($event)">ADD CATEGORY</button>
+        <button type="button" class="btn btn-primary" ng-click="updateCategory($event)">UPDATE CATEGORY</button>
+     </form>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in category">
+            <th scope="row">{{$index+1}}</th>
+            <td>{{item.name}}</td>
+            <td >
+                <a href="#category-management/{{item.id}}"ng-click="detailCategory($event,$index)" style="text-decoration: none;color: black;" >Detail</a>
+                <a href="#category-management/{{item.id}}/remove"ng-click="deleteCategory($event, $index)" style="text-decoration: none;color: black;">Delete</a>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

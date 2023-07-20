@@ -1,0 +1,44 @@
+
+<h4 style="text-align: center;">Change Password</h4><br>
+    <form name="formLogin">
+        <div class="form-outline mb-12">
+          <input type="text" name="username" id="username" class="form-control" required ng-model="form_user.username" style="width:400px;margin-left: 450px;" />
+          <label class="form-label" for="username" style="margin-left: 450px;">Username</label>
+  
+        </div>
+      
+        <div class="form-outline mb-4">
+          <input type="password" name="passwordd" id="password" class="form-control" required ng-model="form_user.password" style="width:400px;margin-left: 450px;"/>
+          <label class="form-label" for="password" style="margin-left: 450px;">Old Password</label>
+          
+        </div>
+
+        <div class="form-outline mb-4">
+            <input type="newpassword" name="newpasswordd" id="newpassword" class="form-control" required ng-model="form_user.newpassword" style="width:400px;margin-left: 450px;"/>
+            <label class="form-label" for="newpassword" style="margin-left: 450px;"> New Password</label>
+            
+          </div>
+      
+        <!-- 2 column grid layout for inline styling -->      
+        <button type="button" class="btn btn-primary btn-block mb-4" ng-click="Change($event)" style="margin-left: 600px;" >Change</button>
+      
+        <div class="text-center">
+          <p>Have a account <a href="#login">Login</a></p>
+          <p>or sign up with:</p>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+      
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+      
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+      
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </form>

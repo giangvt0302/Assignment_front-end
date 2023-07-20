@@ -1,0 +1,101 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pepsi",
+      "price": "1.99",
+      "image": "/assets//pepsi.png",
+      "category": "Original",
+      "detail": ""
+    },
+    {
+      "id": 2,
+      "name": "Pepsi Zero Sugar",
+      "price": "4.99",
+      "image": "/assets//pepsi-zero-sugar.png",
+      "category": "Zero Sugar",
+      "detail": ""
+    },
+    {
+      "id": 3,
+      "name": "Diet Pepsi",
+      "price": "3.99",
+      "image": "/assets//Diet-Pepsi-v2_12oz.png",
+      "category": "Diet",
+      "detail": ""
+    },
+    {
+      "id": 4,
+      "name": "Pepsi Zero Sugar Mango",
+      "price": "5.99",
+      "image": "/assets//can-pepsi-zero-sugar-mango.png",
+      "category": "Zero Sugar",
+      "detail": ""
+    },
+    {
+      "id": 5,
+      "name": "Diet Pepsi Wild Cherry",
+      "price": "2.99",
+      "image": "/assets//Diet-Pepsi-Cherry-v3_12oz.png",
+      "category": "Diet",
+      "detail": ""
+    },
+    {
+      "id": 6,
+      "name": "Pepsi Zero Sugar Wild Cherry",
+      "price": "3.99",
+      "image": "/assets//Pepsi-Zero-Wild-Cherry-12oz-refreshed-v2.png",
+      "category": "Zero Sugar",
+      "detail": ""
+    },
+    {
+      "id": 7,
+      "name": "Pepsi Mango",
+      "price": "1.99",
+      "image": "/assets//can-pepsi-mango.png",
+      "category": "Original",
+      "detail": ""
+    },
+    {
+      "id": 8,
+      "name": "Pepsi Caffeine Free",
+      "price": "1.99",
+      "image": "/assets//can-pepsi-caffeine-free.png",
+      "category": "Special",
+      "detail": ""
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Original"
+    },
+    {
+      "id": 2,
+      "name": "Zero Sugar"
+    },
+    {
+      "id": 3,
+      "name": "Diet"
+    },
+    {
+      "id": 4,
+      "name": "Special"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "giang",
+      "password": "123qwe",
+      "role": "customer"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "123qwe",
+      "role": "admin"
+    }
+    
+  ]
+}

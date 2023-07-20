@@ -1,0 +1,46 @@
+<h4 style="text-align: center;">Register</h4><br>
+<form name="formLogin">
+  <div class="form-outline mb-12">
+    <input type="text" name="username" id="username" class="form-control" required ng-model="form_user.username"
+      style="width:400px;margin-left: 450px;" />
+    <label class="form-label" for="username" style="margin-left: 450px;">Username</label>
+
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="password" name="passwordd" id="password" class="form-control" required ng-model="form_user.password"
+      style="width:400px;margin-left: 450px;" />
+    <label class="form-label" for="password" style="margin-left: 450px;">Password</label>
+
+  </div>
+  <!-- <label for="type">Loai:</label>
+  <select name="type" id="type" ng-model="form_students.role">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select><br> -->
+
+  <!-- 2 column grid layout for inline styling -->
+  <button type="button" class="btn btn-primary btn-block mb-4" ng-click="Register($event)"
+    style="margin-left: 600px;">Register</button>
+
+  <div class="text-center">
+    <p>Have a account <a href="#login">Login</a></p>
+    <p>or sign up with:</p>
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-google"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-github"></i>
+    </button>
+  </div>
+</form>

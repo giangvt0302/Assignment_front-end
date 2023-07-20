@@ -1,0 +1,51 @@
+<div class="container">
+    <h4 style="text-align: center;">Products</h4>
+    <br>
+    <form class="form1">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" ng-model="form_products.id"><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ng-model="form_products.name"><br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" ng-model="form_products.price"><br><br>
+        <label for="detail">Detail:</label>
+        <input type="text" id="detail" name="detail" ng-model="form_products.detail"><br><br>
+        <label for="category">Category:</label>
+        <select name="category" id="category" ng-model="form_products.category">            
+            <option value="Original">Original</option>
+            <option value="Diet">Diet</option>
+            <option value="Zero Sugar">Zero Sugar</option>
+            <option value="Special">Special</option>
+        </select><br><br>
+        <label for="image">Image:</label>
+        <input type="text" id="image" name="image" ng-model="form_products.image"><br><br>
+        <button type="button" class="btn btn-primary" ng-click="addProduct($event)">ADD PRODUCT</button>
+        <button type="button" class="btn btn-primary" ng-click="updateProduct($event)">UPDATE PRODUCT</button>
+    </form>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Detail</th>
+            <th scope="col">Category</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in products">
+            <th scope="row">{{$index+1}}</th>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.detail}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.image}}</td>
+            <td >
+                <a href="#product-management/{{item.id}}"ng-click="detailProduct($event,$index)" style="text-decoration: none;color: black;" >Detail</a>
+                <a href="#product-management/{{item.id}}/remove"ng-click="deleteProduct($event, $index)" style="text-decoration: none;color: black;">Delete</a>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

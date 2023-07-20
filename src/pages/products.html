@@ -1,0 +1,36 @@
+<div class="container">
+    <h4 style="text-align:center;">Products</h4><br>
+    <div class="row">
+        <div class="col-lg-3 col-md-5" >
+            <div class="sidebar">
+                <div class="sidebar-item">
+                <h4 ng-model="searchSp" >Category</h4>
+                <br>
+                <ul>
+                    <li><a href="#products" ng-click="All()" >All</a></li>
+                    <li><a href="#products" ng-click="Original()" >Original</a></li>
+                    <li><a href="#products" ng-click="ZeroSugar()">Zero Sugar</a></li>
+                    <li><a href="#products" ng-click="Diet()">Diet</a></li>
+                    <li><a href="#products" ng-click="Special()">Special</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-7" >
+            <div class="row">
+                <div class="col-lg-4" ng-repeat="item in products | filter:searchSp">
+                <div class="card" style="width: 19rem;padding-right: 0;border: none; margin-left: 0;">
+                    <img src="{{item.image}}" href="#detail" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title" style="text-align: center;">{{item.name}}
+                        </p>
+                        <p class="card-text" style="text-align: center;font-weight: 800;"> ${{item.price}}
+                        </p>
+                        <a href="#detail/{{item.id}}" ng-click="detailProduct($event,$index)" style="text-decoration: none;color: black;margin-left: 115px;">Detail</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
